@@ -12,6 +12,43 @@
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Document</title>
 </head>
+<!-- Menu de navegação -->
+<!-- navbar -  barra de navegação do bootstrap / navbar-expand-lg - controla a respansividade. A partir de telas lg (lange)
+  O menu fica aberto/horizontal. Abaixo disso pode ficar recolhido no botao sanduiche.
+  bg-danger -  define a cor de fundo / navbar-dark adapta os txt e icon no navbar para serem utilizados sobre o fundo escuro
+  shadow - add uma sombra ao elemento -->
+<nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow">
+    <div class="container">
+        <!-- Navbar-brand - estiliza o elemento como a marca/logo da navbar
+         fw-bold - deixa o txt em negrito (fw - font weight)
+         fs-4 - define o tamanho da fonte (fs -  font size ) vai até o 6-->
+        <a class="navbar-brand fw-bold fs-4" href="#">
+            Pizzaria Calabresa Grande
+        </a>
+        <!-- Navbar-toggle - botao responsavel por abrir e fechar o menu em telas maiores,
+
+         data-bs-toggle="collapse" - informa que o botao ira mostrar/esconder um elemento
+
+         data-bs-target -indica qual elemento sera aberto ou fechado nesse caso procura o elemento que possui id="menu"-->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+            <!-- navbar-toggler-icon exibe o botao sanduiche-->
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collaps navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#"> Inicio</a></li>
+                <li class="nav-item"><a class="nav-link " href="#pizzas"> Pizzas</a></li>
+                <li class="nav-item"><a class="nav-link " href="#sobre"> Sobre</a></li>
+                <li class="nav-item"><a class="nav-link " href="#contato"> Contato </a></li>
+
+            </ul>
+        </div>
+    </div>
+    </div>
+</nav>
 
 <body>
 
