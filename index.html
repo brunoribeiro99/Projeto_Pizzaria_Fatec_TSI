@@ -17,13 +17,13 @@
   O menu fica aberto/horizontal. Abaixo disso pode ficar recolhido no botao sanduiche.
   bg-danger -  define a cor de fundo / navbar-dark adapta os txt e icon no navbar para serem utilizados sobre o fundo escuro
   shadow - add uma sombra ao elemento -->
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow">
+<nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow">
     <div class="container">
         <!-- Navbar-brand - estiliza o elemento como a marca/logo da navbar
          fw-bold - deixa o txt em negrito (fw - font weight)
          fs-4 - define o tamanho da fonte (fs -  font size ) vai até o 6-->
         <a class="navbar-brand fw-bold fs-4" href="#">
-            Pizzaria 
+            Pizzaria Grande sabor
         </a>
         <!-- Navbar-toggle - botao responsavel por abrir e fechar o menu em telas maiores,
 
@@ -59,12 +59,13 @@
                     A melhor pizza para todos os momentos!
                 </h1>
 
-                <p class="lead"> 
-Pizzas selecionadas com cuidado e preparadas para oferecer sabor, qualidade e praticidade. Uma experiência deliciosa para você e toda a família.
+                <p class="lead">
+                    Pizzas selecionadas com cuidado e preparadas para oferecer sabor, qualidade e praticidade. Uma
+                    experiência deliciosa para você e toda a família.
 
                 </p>
 
-                <a href="#pizzas" class="btn btn-dark bnt-lg"> 
+                <a href="#pizzas" class="btn btn-danger bnt-lg">
                     Ver cardapio
                 </a>
             </div>
@@ -79,6 +80,62 @@ Pizzas selecionadas com cuidado e preparadas para oferecer sabor, qualidade e pr
     </div>
 
     </sectio>
+
+    <section id="pizzas" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">
+                Nossas pizzas
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/pizza_frango.png" class="card-img-top" alt="Pizzas">
+                        <div class="card-body">
+                            <h5 class="card-title"> Frango com Catupiry</h5>
+                            <p class="card-text">
+                                Molho de tomate, mussarela, frango desfiado, catupiry e azeitona
+                            </p>
+                            <p class="fw-bold text-danger fs-5"> R$ 45,00</p>
+
+                            <a href="#" class="btn btn-danger"> Faça seu pedido</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/pizza_calabresa.png" class="card-img-top" alt="Pizzas">
+                        <div class="card-body">
+                            <h5 class="card-title"> Frango de Calabresa</h5>
+                            <p class="card-text">
+                                Molho de tomate, mussarela, calabresa, cebola, tomate e azeitona
+                            </p>
+                            <p class="fw-bold text-danger fs-5"> R$ 45,00</p>
+
+                            <a href="#" class="btn btn-danger"> Faça seu pedido</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/pizza_5queijos.png" class="card-img-top" alt="Pizzas">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Pizza de 5 Queijos</h5>
+                            <p class="card-text">
+                                Molho de tomate, mussarela, provolone, gouda, cheddar e brie.
+                            </p>
+
+
+                            </p>
+                            <p class="fw-bold text-danger fs-5"> R$ 45,00</p>
+
+                            <a href="#" class="btn btn-danger"> Faça seu pedido</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
 
     <body>
